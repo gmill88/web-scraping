@@ -67,3 +67,10 @@ git add .
 git commit -m "your comment"
 git push origin master   
 ``` 
+
+## Export to HTML
+Execute the notebook and export to HTML using
+```bash
+!jupyter nbconvert --to html web-scraping.ipynb
+```
+Commit and push your HTML files to your GitHub repo along with the executed notebooks
