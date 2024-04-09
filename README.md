@@ -15,11 +15,11 @@ Make sure to add and push the pkl or text file of your scraped html (this is spe
 * (Question 8) Thoughtful answer provided: 1 pt
 
 
-# Project 3: Matplotlib and pyplot
+# Project 6: Web Scraping, NLP (Requests, BeautifulSoup, and spaCy)
 
 ## Project Objectives
 
-The objective of this execise is to reinforce python visualization skills using Matplotlib.
+This exercise is used to practice web scraping (fetching and extracting information) and processing the content from a web page. 
 
 ## Get Started
 
@@ -36,11 +36,13 @@ source .venv/bin/activate
 
 ### Install into the virtual environment
 ```bash
-python -m pip install beautifulsoup4
-python -m pip install html5lib
-python -m pip install requests
-python -m pip install spacy
-python -m pip install spacytextblob
+from spacy.lang.en.stop_words import STOP_WORDS
+from collections import Counter
+import pickle
+import requests
+import spacy
+from bs4 import BeautifulSoup
+import matplotlib.pyplot as plt
 ```
 
 ### Run Cell to verify successful install 
